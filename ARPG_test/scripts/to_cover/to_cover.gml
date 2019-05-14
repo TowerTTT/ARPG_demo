@@ -1,0 +1,1 @@
+set_state_sprite(s_player_cover,1,0);

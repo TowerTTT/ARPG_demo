@@ -1,0 +1,2 @@
+﻿id,name,description,notes,type,damage_1,damagetype
+1,slash,slash an enemy infront,player's slash,damage,10,
