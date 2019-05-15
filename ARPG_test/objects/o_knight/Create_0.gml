@@ -125,6 +125,9 @@ knockback_distance = 0;			// 击退距离
 is_char_hit = false;			// 是否击中目标
 killed_count = false;			// 是否杀了角色
 
+is_executable = false;			// 是否可以被处决
+is_being_executed = false;		// 是否被处决
+
 rebound_combo = 0;				// 连击中被弹刀的次数
 
 

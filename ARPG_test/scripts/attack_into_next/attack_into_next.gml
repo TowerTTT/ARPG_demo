@@ -4,7 +4,7 @@
 var frame_low = argument0;
 var frame_high = argument1;
 
-if animation_frame_between(frame_low,frame_high)
+if animation_frame_between(frame_low-1,frame_high-1)
 {
 	if input.attack
 	{
@@ -16,6 +16,8 @@ if animation_frame_between(frame_low,frame_high)
 		}
 	}
 }
+
+
 
 if animation_end()
 {

@@ -17,7 +17,7 @@ switch(state)
 		else if distance_to_object(player) <= attack_range
 		{
 			chase_player();
-			//state = "attack";
+			state = "attack";
 		}
 		
 		#endregion
@@ -26,7 +26,7 @@ switch(state)
 	case "attack":
 		#region enemy's attack state
 		
-		current_skill = "strike";
+		current_skill = "slash";
 		
 		enemy_skill_performance(current_skill);
 		
@@ -53,9 +53,15 @@ switch(state)
 		#region enemy's losebalance state
 		lose_balance(s_knight_lose_balance);
 		
+		if is_being_executed
+		{
+			state = "executed";
+		}
+		
 		if animation_end()
 		{
 			ds_list_delete(player.executable_enemys,ds_list_find_index(player.executable_enemys,self));
+			is_executable = false;
 			state = "move";
 		}
 		
@@ -69,7 +75,9 @@ switch(state)
 		{
 			ds_list_delete(player.executable_enemys,ds_list_find_index(player.executable_enemys,self));
 		}
-				
+		
+		
+		
 		set_state_sprite(s_knight_executed,1,0);
 		
 		if animation_end()

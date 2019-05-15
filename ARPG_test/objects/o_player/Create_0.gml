@@ -20,7 +20,7 @@ bp = max_bp;					// 平衡
 
 
 /* -------------------- 力量 -------------------- */
-strength = 200;					// 力量
+strength = 150;					// 力量
 strength_factory = 1;			// 力量系数
 strength_char = 0;				// 角色自身的额外力量
 

@@ -222,17 +222,17 @@ switch(state)
 	case "attack":
 		#region Attack state
 		
-		attack_detect();
 		
-		show_debug_message(ds_list_size(executable_enemys));
+		
+		attack_detect();
 		
 		if ds_list_size(executable_enemys) != 0
 		{
 			executing_enemy = executable_enemys[|0];
-			if ds_list_size(executable_enemys) == 1
+			if ds_list_size(executable_enemys) == 1 
 			{
-				instance_create_layer(executing_enemy.x,executing_enemy.y-48,"Enemy",o_execute_tip);
-				executing_enemy.state = "executed";
+				audio_play_sound(snd_danger,1,false);
+				executing_enemy.is_being_executed = true;
 				state = "executing";
 			}
 			else
@@ -241,10 +241,9 @@ switch(state)
 				{
 				    executing_enemy = min(distance_to_object(executable_enemys[|i-1]),distance_to_object(executable_enemys[|i]))
 				}
-				executing_enemy.state = "executed";
-				state = "executing";
 			}
-		}else if skill_motor_count < skill_order_max
+		}
+		else if skill_motor_count < skill_order_max
 		{
 			player_skill_impact(skill_order[|skill_motor_count]);
 		}
@@ -276,16 +275,24 @@ switch(state)
 	case "executing":
 		#region excuting State
 		
+
+		
 		if executing_enemy.x - x < 0
 		{
 			image_xscale = -1;
+			x = executing_enemy.x+15;
+			y = executing_enemy.y;
 		}
 		else
 		{
+			x = executing_enemy.x-15;
+			y = executing_enemy.y;
 			image_xscale = 1;
 		}
 		
-		player_skill_impact(2);
+		
+		
+		player_skill_impact(4);
 		
 		if animation_end()
 		{

@@ -28,4 +28,12 @@ switch(_move_index)
 		}
 		break;
 		
+	case "execute":
+		set_state_sprite(s_player_executing,1,0);
+		if animation_frame_at(4)
+		{
+			audio_play_sound(snd_execute,random_range(3,4),false);
+		}
+		break;
+		
 }

@@ -455,6 +455,14 @@
             }
         },
         {
+            "Key": "62311d9f-5dde-4a1c-b117-0fcc713387e7",
+            "Value": {
+                "id": "6ec1731b-c24b-4a2b-b645-4b7095e73f66",
+                "resourcePath": "scripts\\set_sprite_end\\set_sprite_end.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "63b1a176-410a-41a2-89db-5465b2cfaab3",
             "Value": {
                 "id": "f1c4ef36-ab60-4b25-8511-3084429f83ea",
@@ -636,6 +644,14 @@
                 "id": "a37e7312-57f6-4367-8dbd-319dc48d547f",
                 "resourcePath": "views\\805be78a-dbb1-4b8b-af86-38ead16b29b0.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "822a0b2d-48a1-4e91-ad4f-49f57e81da17",
+            "Value": {
+                "id": "0dfbdc1b-1a25-4267-acbc-13906f4074d2",
+                "resourcePath": "sounds\\snd_danger\\snd_danger.yy",
+                "resourceType": "GMSound"
             }
         },
         {
@@ -983,6 +999,14 @@
             }
         },
         {
+            "Key": "ca475020-b3f6-4502-8b17-0d686fb088a7",
+            "Value": {
+                "id": "2e621841-d6d7-48f6-94a8-667e6de45f7c",
+                "resourcePath": "sprites\\s_player_executing\\s_player_executing.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "cb3b108a-5fe8-4333-b75a-186a93234355",
             "Value": {
                 "id": "454b00c5-187a-4015-85e9-f0a5e87db004",
@@ -1239,6 +1263,14 @@
             }
         },
         {
+            "Key": "fc810c51-c16d-41ae-8394-2545d8d8ae3d",
+            "Value": {
+                "id": "d3e6b08d-ff7c-4eba-bd4b-1def5d217356",
+                "resourcePath": "sounds\\snd_execute\\snd_execute.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "fcee9ce5-eaae-439a-a647-98dc88a44ece",
             "Value": {
                 "id": "d650fa21-2448-4fe6-afed-bfee62bc0042",
@@ -1274,6 +1306,7 @@
         "d8fee5c9-4de0-4e17-908a-58102c828611",
         "86c6d169-dbbb-4561-9cb2-cfbfada573f6",
         "e63d807f-7391-4054-8d92-877b016cf26a",
+        "62311d9f-5dde-4a1c-b117-0fcc713387e7",
         "cb3b108a-5fe8-4333-b75a-186a93234355",
         "f63c53d5-a714-45c6-a01b-688055b41ff5",
         "b6afedad-0738-4492-9157-de2a6416b77a",

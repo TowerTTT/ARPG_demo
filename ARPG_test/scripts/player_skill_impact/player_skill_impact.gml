@@ -9,36 +9,49 @@ switch(skill_id)
 	case 1:
 		attack_move("slash");
 		
-		if animation_frame_at(0)
+		if animation_frame_at(1)
 		{
 			create_hitbox(x,y,self,s_player_slash_hitbox,image_xscale,10,strength_factory * self.strength,1,1,10,4,4,1);
 		}
 		
-		attack_into_next(2,5);
+		attack_into_next(3,5);
 		
 		break;
 		
 	case 2:
 		attack_move("chop");
 
-		if animation_frame_at(0)
+		if animation_frame_at(1)
 		{
 			create_hitbox(x,y,self,s_player_chop_hitbox,image_xscale,10,strength_factory * self.strength,1,1,10,4,4,1);
 		}
 
-		attack_into_next(2,5);
+		attack_into_next(3,5);
 		
 		break;
 		
 	case 3:
 		attack_move("stab");
 		
-		if animation_frame_at(0)
+		if animation_frame_at(1)
 		{
 			create_hitbox(x,y,self,s_player_stab_hitbox,image_xscale,10,strength_factory * self.strength,2,1,10,4,4,1);
 		}
 		
-		attack_into_next(2,5);
+		attack_into_next(3,5);
+		
+		break;
+		
+	case 4:
+		attack_move("execute");
+		
+		if animation_frame_at(4)
+		{
+			//create_hitbox(x,y,self,s_player_stab_hitbox,image_xscale,10,strength_factory * self.strength,2,1,10,4,4,1);
+			
+		}
+		
+		attack_into_next(3,5);
 		
 		break;
 		

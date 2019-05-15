@@ -13,9 +13,10 @@ if creator == noone or suffer == noone or creator == suffer or ds_list_find_inde
 if creator.object_index == player
 {
 	if object_get_parent(suffer.object_index) == all_enemy
-	{
+	{show_debug_message("i am attacking");
 		switch(suffer.state)
 		{
+			
 			#region enemy's suffer state
 			
 			case "move":
