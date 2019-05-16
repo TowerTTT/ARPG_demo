@@ -39,7 +39,7 @@ if creator.object_index == player
 				
 			case "losebalance":
 				#region enemy's losebalance state
-				
+				hit_judge(player,suffer,hp_damage,bp_damage,effect,intensity,shake,duration);
 				#endregion
 				break;
 				
@@ -145,7 +145,7 @@ if creator.object_index != player
 				break;
 				
 			default:
-				show_debug_message("enemy state " + state + "dose not exist");
+				//show_debug_message("enemy state " + state + "dose not exist");
 				break;
 			#endregion
 		}

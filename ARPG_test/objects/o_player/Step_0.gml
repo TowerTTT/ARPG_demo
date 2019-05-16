@@ -44,6 +44,7 @@ switch(state)
 		if input.attack
 		{
 			#region Attack Judge
+			attack_detect();
 			state = "attack";
 			#endregion
 		}
@@ -222,31 +223,12 @@ switch(state)
 	case "attack":
 		#region Attack state
 		
-		
-		
-		attack_detect();
-		
-		if ds_list_size(executable_enemys) != 0
-		{
-			executing_enemy = executable_enemys[|0];
-			if ds_list_size(executable_enemys) == 1 
-			{
-				audio_play_sound(snd_danger,1,false);
-				executing_enemy.is_being_executed = true;
-				state = "executing";
-			}
-			else
-			{
-				for (var i = 1; i < ds_list_size(executable_enemys) -1; ++i) 
-				{
-				    executing_enemy = min(distance_to_object(executable_enemys[|i-1]),distance_to_object(executable_enemys[|i]))
-				}
-			}
-		}
-		else if skill_motor_count < skill_order_max
+		if skill_motor_count < skill_order_max
 		{
 			player_skill_impact(skill_order[|skill_motor_count]);
 		}
+		
+		
 		
 		// 按下 空格 的时候，状态变为翻滚
 		if input.roll
@@ -258,6 +240,7 @@ switch(state)
 		
 		if animation_end()
 		{
+			attack_detect();
 			state = "move";
 		}
 		
@@ -274,23 +257,6 @@ switch(state)
 	// 处决敌人
 	case "executing":
 		#region excuting State
-		
-
-		
-		if executing_enemy.x - x < 0
-		{
-			image_xscale = -1;
-			x = executing_enemy.x+15;
-			y = executing_enemy.y;
-		}
-		else
-		{
-			x = executing_enemy.x-15;
-			y = executing_enemy.y;
-			image_xscale = 1;
-		}
-		
-		
 		
 		player_skill_impact(4);
 		

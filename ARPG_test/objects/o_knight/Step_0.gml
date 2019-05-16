@@ -51,18 +51,13 @@ switch(state)
 				
 	case "losebalance":
 		#region enemy's losebalance state
-		lose_balance(s_knight_lose_balance);
 		
-		if is_being_executed
-		{
-			state = "executed";
-		}
+		lose_balance(s_knight_lose_balance);
 		
 		if animation_end()
 		{
-			ds_list_delete(player.executable_enemys,ds_list_find_index(player.executable_enemys,self));
-			is_executable = false;
 			state = "move";
+			bp_is_recover = false;
 		}
 		
 		#endregion
@@ -70,13 +65,6 @@ switch(state)
 				
 	case "executed":
 		#region enemy's executed state
-		
-		if ds_list_find_index(player.executable_enemys,self) != -1
-		{
-			ds_list_delete(player.executable_enemys,ds_list_find_index(player.executable_enemys,self));
-		}
-		
-		
 		
 		set_state_sprite(s_knight_executed,1,0);
 		
@@ -100,9 +88,12 @@ switch(state)
 	case "death":
 		#region enemy's death state
 		
-		image_index = image_number - 1;
+		set_state_sprite(s_knight_death,1,0);
 		
-		object_set_mask(self.object_index,noone);
+		if animation_end()
+		{
+			instance_destroy();
+		}
 		
 		#endregion
 		break;

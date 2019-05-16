@@ -1,4 +1,8 @@
 event_inherited();
 
-value_control(money,0,max_money);
-value_control(experience,0,max_experience);
+if experience >= max_experience
+{
+	experience = 0;
+	level +=1;
+	max_experience *= 3;
+}

@@ -62,6 +62,8 @@ if instance_exists(player)
 }
 var exp_percent = draw_exp/draw_max_exp;
 
+draw_text(180,170,string(player.experience) + " / " + string(player.max_experience));
+
 /* -------------------- 绘制 ------------------ */
 draw_sprite(s_exp_bar,0,exp_x,exp_y);
 draw_rectangle_color(exp_x,exp_y,exp_x + exp_width * exp_percent,exp_y + exp_height,c_white,c_white,c_white,c_white,false);

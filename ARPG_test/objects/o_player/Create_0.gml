@@ -20,7 +20,7 @@ bp = max_bp;					// 平衡
 
 
 /* -------------------- 力量 -------------------- */
-strength = 150;					// 力量
+strength = 15;					// 力量
 strength_factory = 1;			// 力量系数
 strength_char = 0;				// 角色自身的额外力量
 
@@ -84,10 +84,10 @@ ds_list_add(skill_order,3);
 
 /* -------------------- 拥有 -------------------- */
 drop_item = ds_map_create();	// 物品掉落
-experience = 100;				// 经验
-max_experience = 100;			// 经验上限
+experience = 0;				// 经验
+max_experience = 20;				// 经验上限
 money = 0;						// 金钱
-max_money = 100;				// 金钱上限
+//max_money = 100;				// 金钱上限
 
 
 /* -------------------- 状态 -------------------- */
@@ -125,6 +125,8 @@ hp_damage = 0;					// 生命损伤
 bp_damage = 0;					// 平衡损失
 is_char_hit = false;			// 是否击中目标
 killed_count = false;			// 是否杀了角色
+
+executable = false;
 
 cover_combo = 0;				// 连击中被弹刀的次数
 is_cover_combo = false;			// 连击中被弹刀的开关

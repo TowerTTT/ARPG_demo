@@ -78,6 +78,7 @@ char_skill = ds_map_create();	// 角色拥有的技能
 
 /* -------------------- 拥有 -------------------- */
 drop_item = ds_map_create();	// 物品掉落
+experience = 0;
 
 
 
@@ -116,8 +117,6 @@ killed_count = false;			// 是否杀了角色
 rebound_combo = 0;				// 连击中被弹刀的次数
 
 knockback_speed = 5;			// 击退速度
-
-is_executable = false;			// 可否被处刑
 
 
 /*	+-------------------------------+	
