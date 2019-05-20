@@ -8,3 +8,8 @@ cover = keyboard_check_pressed(ord("K"));
 take_off_cover = keyboard_check_released(ord("K"));
 defend = keyboard_check(ord("K"));
 dodge = keyboard_check_pressed(ord("L"));
+
+savegame = keyboard_check_pressed(vk_f1);
+
+// ----------------- test ----------------- //
+add_drug = keyboard_check_pressed(ord("Q"));

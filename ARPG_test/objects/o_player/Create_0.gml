@@ -84,10 +84,11 @@ ds_list_add(skill_order,3);
 
 /* -------------------- 拥有 -------------------- */
 drop_item = ds_map_create();	// 物品掉落
-experience = 0;				// 经验
-max_experience = 20;				// 经验上限
+experience = 0;					// 经验
+max_experience = 20;			// 经验上限
 money = 0;						// 金钱
 //max_money = 100;				// 金钱上限
+drug = 0;
 
 
 /* -------------------- 状态 -------------------- */

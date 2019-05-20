@@ -114,6 +114,18 @@ var text_height = string_height(text);
 draw_sprite(s_strength,0,start_x,start_y+2.5);
 draw_text(start_x + padding_x ,start_y + padding_y,text);
 
+/* ------------------- 血瓶数量 ----------------- */
+
+var text = string(player.drug);
+
+start_x += text_width + padding_x*2;
+
+var text_width = string_width(text);
+var text_height = string_height(text);
+
+draw_sprite(s_drug,0,start_x,start_y+2.5);
+draw_text(start_x + padding_x ,start_y + padding_y,text);
+
 /*	+-----------------------------------------+	
 	|				  受伤效果		          |
 	+-----------------------------------------+	*/

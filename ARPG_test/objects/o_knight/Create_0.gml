@@ -26,7 +26,7 @@ level = 1;						// 等级
 
 
 /* -------------------- 血量 -------------------- */
-max_hp = 10;					// 血量上限
+max_hp = 100;					// 血量上限
 hp = max_hp;					// 血量
 
 
@@ -89,8 +89,7 @@ char_skill = ds_map_create();	// 角色拥有的技能
 
 /* -------------------- 拥有 -------------------- */
 drop_item = ds_map_create();	// 物品掉落
-experience = 10;
-money = 20;
+
 
 
 /* -------------------- 状态 -------------------- */
@@ -125,6 +124,9 @@ bp_damage = 0;					// 平衡损失
 knockback_distance = 0;			// 击退距离
 is_char_hit = false;			// 是否击中目标
 killed_count = false;			// 是否杀了角色
+
+is_executable = false;			// 是否可以被处决
+is_being_executed = false;		// 是否被处决
 
 rebound_combo = 0;				// 连击中被弹刀的次数
 

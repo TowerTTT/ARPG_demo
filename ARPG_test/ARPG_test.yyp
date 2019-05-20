@@ -271,6 +271,14 @@
             }
         },
         {
+            "Key": "413c3991-b6d5-4881-9469-b01d5581a77d",
+            "Value": {
+                "id": "3cd5e4cd-2203-4880-baba-32aae4dd34cd",
+                "resourcePath": "scripts\\load_json_from_file\\load_json_from_file.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "4182c955-7333-4abf-b5c6-1adb1794b4a7",
             "Value": {
                 "id": "54be0111-992b-4399-82e6-01e4ac7c5804",
@@ -919,6 +927,14 @@
             }
         },
         {
+            "Key": "b4d5fa3e-ec7c-4a8d-bbcd-46278cb6ae4d",
+            "Value": {
+                "id": "9a84913f-3b9a-4cec-840a-44a1b4f5cf50",
+                "resourcePath": "sprites\\s_drug\\s_drug.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "b66c2e3e-458e-41b5-9e8f-66d0a2ce8601",
             "Value": {
                 "id": "86ce49a3-470e-4af1-90d7-41a2b8ae06cd",
@@ -1207,6 +1223,14 @@
             }
         },
         {
+            "Key": "e2cd0420-9ca1-4192-b2ec-5f5cda3c0c96",
+            "Value": {
+                "id": "885beadd-c975-4d64-a711-34992a639568",
+                "resourcePath": "scripts\\save_string_to_file\\save_string_to_file.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "e63d807f-7391-4054-8d92-877b016cf26a",
             "Value": {
                 "id": "778e66b1-fd26-4450-a66e-02c0a3e4c600",
@@ -1287,6 +1311,14 @@
             }
         },
         {
+            "Key": "f6b92a9b-6cc5-4f90-b365-ef320fed44c2",
+            "Value": {
+                "id": "485dc5ce-9a32-4991-8eaa-105587c1452f",
+                "resourcePath": "objects\\o_save_load\\o_save_load.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "f97cc935-aa72-4937-a3f6-89de4784d4da",
             "Value": {
                 "id": "bf73a0b7-fc08-482f-a8f3-b0c51f905569",
@@ -1347,6 +1379,8 @@
         "96685512-c201-4a8d-9928-83035bc0d6fe",
         "d203d292-0230-4a5f-b26b-df7900ef9c8a",
         "a6e9217a-970c-4c61-bd17-9c36a6085d44",
+        "e2cd0420-9ca1-4192-b2ec-5f5cda3c0c96",
+        "413c3991-b6d5-4881-9469-b01d5581a77d",
         "09bf0627-7fe3-44f0-ae75-ffcd585d4b71",
         "5a2d3dfa-2c4e-4216-8b71-e0c8fe3859b9",
         "cc9f7677-465b-4b44-8c70-2f0ec3d4431b",

@@ -288,3 +288,7 @@ switch(state)
 		break;
 }
 
+if input.add_drug
+{
+	drug ++;
+}
